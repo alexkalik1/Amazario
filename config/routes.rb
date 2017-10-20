@@ -1,7 +1,9 @@
-# Rails.application.routes.draw do
+Rails.application.routes.draw do
+     resources :reviews
+     resources :products
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  Amazario::Application.routes.draw do
+  #Amazario::Application.routes.draw do
 
       # This route sends requests to our naked url to the *cool* action in the *gif* controller.
      #  root to: 'gif#cool'
@@ -10,7 +12,7 @@
      #  # This is optional (as is the root to: above).
      #  get '/cool' => 'gif#cool'
      #  get '/sweet' => 'gif#sweet'
- 
+
      # these routes are for showing users a login form, logging them in, and logging them out.
      get '/login' => 'sessions#new'
      post '/login' => 'sessions#create'
