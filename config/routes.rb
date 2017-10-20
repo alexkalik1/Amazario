@@ -10,6 +10,7 @@ Rails.application.routes.draw do
      #  get '/cool' => 'gif#cool'
      #  get '/sweet' => 'gif#sweet'
      # these routes are for showing users a login form, logging them in, and logging them out.
+     root to: 'sessions#new'
      get '/login' => 'sessions#new'
      post '/login' => 'sessions#create'
      get '/logout' => 'sessions#destroy'

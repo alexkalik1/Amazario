@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 
      #This will force user's to login before they can see the actions in this controller.
      # before_filter :authorize
-     
+
      def new
      end
 
@@ -10,7 +10,7 @@ class UsersController < ApplicationController
           user = User.new(user_params)
                if user.save
                     session[:user_id] = user.id
-                    redirect_to '/'
+                    redirect_to '/products'
                else
                     redirect_to '/signup'
                end
