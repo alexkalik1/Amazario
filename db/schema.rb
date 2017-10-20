@@ -16,9 +16,9 @@ ActiveRecord::Schema.define(version: 20171020191319) do
     t.string "email"
     t.string "password_digest"
   end
-end
+#end
 
-ActiveRecord::Schema.define(version: 20171020192749) do
+#ActiveRecord::Schema.define(version: 20171020192749) do
 
   create_table "products", force: :cascade do |t|
     t.string "name"
