@@ -6,25 +6,37 @@ body {
      color: white;
 
 }
+input {
+     background-color: grey;
+     height: 21px;
+     margin-top: 6px;
+     padding-left: 3px;
+     margin-left: 5px;
 
-.spot {
+}
+.email {
+     display: flex;
+     flex: inline;
+}
+.pw {
+     display: flex;
+     flex: inline;
 }
 
 #logo {
-     margin-left: 120px;
+     margin-left: 115px;
      margin-top: 50px;
-     max-width: 100px;
-     max-height: 120px;
+     max-width: 110px;
+     max-height: 110px;
      border-radius: 50%;
      // border-color: 1px;
      // border-style: ridge;
 }
 
 button {
-     margin-left: 30px;
-     background-position: center;
-     background-color: grey;
-     opacity: .0%;
+     margin: auto;
+     // background-position: center;
+     // background-color: grey;
 }
 
 .login-sec {
@@ -39,6 +51,9 @@ button {
 .log {
      color: white;
      text-align: center;
+     font-size: 2em;
+     text-shadow: 2px 2px 4px #000000;
+
 }
 
 img {
