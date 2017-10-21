@@ -26,7 +26,7 @@ p {
   margin-top: 25px;
 }
 
-p#name {
+p#name, p#comment {
   margin-top: 75px;
 }
 
