@@ -2,3 +2,40 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+/** {
+  text-align: center;
+}
+
+h1 {
+  margin: auto;
+  padding-top: 75px;
+  padding-bottom: 50px;
+  font-size: 30px;
+  width: 100%;
+  display: inline-block;
+}
+
+table {
+  margin: auto;
+  width: 75%;
+  font-size: 20px;
+}
+
+table td {
+  font-size: 20px !important;
+  padding-bottom: : 10px;
+}
+
+#notice {
+  position: fixed;
+  top: 0;
+  height: 0;
+}
+
+h3 {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+body {
+  width: 100%;
+}*/
