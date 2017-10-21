@@ -13,6 +13,20 @@ h1 {
   margin-bottom: 35px;
 }
 
+tr {
+  height: 50px;
+}
+
+table {
+  margin: auto;
+}
+body {
+  margin: 0;
+}
+
+div.link {
+  text-align: center;
+}
 /*table {
   margin: auto;
   width: 75%;
