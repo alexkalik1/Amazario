@@ -23,6 +23,10 @@
   width: 100%;
 }*/
 
+* {
+  font-family: "Times New Roman", Georgia, Serif;
+}
+
 header {
   position: fixed;
   top: 0;
