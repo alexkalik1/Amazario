@@ -26,6 +26,7 @@
 
   <h2>New Review</h2>
 <%= render 'reviews/form' %>
-
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<div id="back_edit">
+  <%= link_to 'Edit', edit_product_path(@product) %> |
+  <%= link_to 'Back', products_path %>
+</div>
