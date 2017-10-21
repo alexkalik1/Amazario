@@ -18,4 +18,19 @@ table {
 }
 body {
   margin: 0;
+  text-align: center;
+
+}
+
+p {
+  margin-top: 25px;
+}
+
+p#name {
+  margin-top: 75px;
+}
+
+h2 {
+  margin-top: 50px;
+  text-decoration: underline;
 }
