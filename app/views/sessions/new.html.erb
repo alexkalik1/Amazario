@@ -1,14 +1,16 @@
 
-<div class="spot">
-<img id="logo"src="https://s-media-cache-ak0.pinimg.com/originals/5f/49/f3/5f49f3f0aa52619417b0e9f6cdc345c7.jpg" alt="Amazario">
-<h6 class= "log">AMAZARIO</h6>
+<div id="spot">
+<img class="logo"src="https://major.io/wp-content/uploads/2014/08/image-ansible.png" alt="Amazario">
+<h6 class= "logo-name">AMAZARIO</h6>
 </div>
-<%= form_tag '/login' do %>
 
 <div class="login-sec">
-     <h4 class= "email"><img src="https://citrusox.com/wp-content/uploads/2015/09/Mail-Icon.png"> <%= text_field_tag :email %></h4>
+     <%= form_tag '/login' do %>
+     <h4 class= "email"><img src="https://citrusox.com/wp-content/uploads/2015/09/Mail-Icon.png"><%= text_field_tag :email %></h4>
      <h3 class= "pw"><img src="http://www.pixelimage.tv/CONTENT_wp-content/uploads/2015/01/private-xxl.png"><%= password_field_tag :password %></h3>
-     <button><%= submit_tag "Submit" %></button>
 </div>
 
+<div class="btn">
+<button class="login-btn"><%= submit_tag "Login" %></button>
 <% end %>
+</div>

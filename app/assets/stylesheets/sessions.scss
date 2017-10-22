@@ -6,13 +6,41 @@ body {
      color: white;
 
 }
-input {
-     background-color: grey;
-     height: 21px;
-     margin-top: 6px;
-     padding-left: 3px;
-     margin-left: 5px;
-
+img {
+     padding: 2px;
+     max-width: 35px;
+     max-height: 35px;
+     border-radius: 50%;
+     opacity: .5;
+}
+.logo {
+     max-width: 150px;
+     max-height: 150px;
+     position: fixed;
+     top: 15%;
+     left: 31%;
+     opacity: .65;
+}
+.logo-name {
+     font-family: 'Saira Extra Condensed', sans-serif;
+     font-size: 3.5em;
+     // color: #414047;
+     // color: #B6B2D0;
+     // color: #443c32;
+     color: #c7c5c4;
+     letter-spacing: 2.2px;
+     position: fixed;
+     top: 32%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     // text-shadow: 1px 0px 1px #ccc;
+     text-shadow: 1px 1px 1px black;
+}
+.login-sec {
+     position: fixed;
+     top: 62%;
+     left: 47%;
+     transform: translate(-50%, -50%);
 }
 .email {
      display: flex;
@@ -22,43 +50,45 @@ input {
      display: flex;
      flex: inline;
 }
-
-#logo {
-     margin-left: 115px;
-     margin-top: 50px;
-     max-width: 110px;
-     max-height: 110px;
-     border-radius: 50%;
-     // border-color: 1px;
-     // border-style: ridge;
+.email input {
+     background-color: #414047;
+     height: 21px;
+     margin-top: 6px;
+     padding-left: 3px;
+     margin-left: 5px;
+     border-left: solid 2px transparent;
+     border-right: solid 2px transparent;
+     border-bottom: solid 2px #fff;
+     filter: drop-shadow(10px 20px 30px #333);
 }
-
-button {
-     margin: auto;
-     // background-position: center;
+.pw input {
+     background-color: #414047;
+     height: 21px;
+     margin-top: 6px;
+     padding-left: 3px;
+     margin-left: 5px;
+     border-left: solid 2px transparent;
+     border-right: solid 2px transparent;
+     border-bottom: solid 2px #fff;
+     filter: drop-shadow(10px 20px 30px #333);
+}
+.btn {
+     position: fixed;
+     left: 28%;
+     top: 73%;
+}
+.login-btn {
+     padding: 7px 64px;
+     background-position: center;
+     background: rgba(199, 197, 196, 0.1);
      // background-color: grey;
+     // opacity: .5;
+     // border-left: solid 3px transparent;
+     // border-right: solid 3px transparent;
+     // border-bottom: solid 3px #fff;
+     // box-shadow: 0px 0px 30px #333;
 }
-
-.login-sec {
-     // display:flex;
-     justify-content:center;
-     align-items:center;
-     margin-left: 70px;
-     margin-top: 140px;
-}
-
-
-.log {
+.login-btn input {
+     font-family: monospace;
      color: white;
-     text-align: center;
-     font-size: 2em;
-     text-shadow: 2px 2px 4px #000000;
-
-}
-
-img {
-     padding: 2px;
-     max-width: 35px;
-     max-height: 35px;
-     border-radius: 50%;
 }

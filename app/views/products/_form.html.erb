@@ -11,22 +11,23 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="prd-name">
     <%= form.label :name %>
     <%= form.text_field :name, id: :product_name %>
   </div>
 
-  <div class="field">
+  <div class="prd-price">
+       <%= form.label :price_in_cents %>
+       <%= form.number_field :price_in_cents, id: :product_price_in_cents %>
+ </div>
+
+  <div class="prd-des">
     <%= form.label :description %>
     <%= form.text_area :description, id: :product_description %>
   </div>
 
-  <div class="field">
-    <%= form.label :price_in_cents %>
-    <%= form.number_field :price_in_cents, id: :product_price_in_cents %>
-  </div>
 
   <div class="actions">
     <%= form.submit %>
+     <% end %>
   </div>
-<% end %>
