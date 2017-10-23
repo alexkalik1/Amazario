@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
      resources :reviews
      resources :products
+     resources :charges
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   #Amazario::Application.routes.draw do
       # This route sends requests to our naked url to the *cool* action in the *gif* controller.
