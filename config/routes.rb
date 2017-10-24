@@ -2,6 +2,7 @@ Rails.application.routes.draw do
      resources :reviews
      resources :products
      resources :charges
+     resource :cart, only: [:show]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   #Amazario::Application.routes.draw do
       # This route sends requests to our naked url to the *cool* action in the *gif* controller.
@@ -19,4 +20,8 @@ Rails.application.routes.draw do
       # receive the form and create a user in our database using the data given to us by the user.
       get '/signup' => 'users#new'
       post '/users' => 'users#create'
+
+      post '/order_items' => 'order_items#create'
+
+      delete '/order_items.:id' => 'order_items#destroy'
 end

@@ -1,0 +1,13 @@
+<h1>Shopping Cart</h1>
+
+<% if @order_items.any? %>
+  <% @order_items.each do |item| %>
+    <p><%= item.product.name %> | <%= link_to "Delete", order_items_path(item), :data => {:confirm => "You sure?", :method => "delete"} %></p>
+    <p>Unit Price: <%= item.product.formatted_price %></p>
+  <% end %>
+  <p>Total Price <%= sprintf("$%.2f", (current_order.total_price/100)) %>
+<% else %>
+  <p>Your shopping cart is empty.</p>
+<% end %>
+
+<button id="checkout">Checkout and Pay</button>
