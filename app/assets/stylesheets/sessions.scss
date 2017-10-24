@@ -1,101 +1,124 @@
 // Place all the styles related to the sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body {
-     background-color: #353244;
-     color: white;
-
+// body {
+//      background-color: #353244;
+//      color: white;
+//
+// }
+// img {
+//      padding: 2px;
+//      max-width: 35px;
+//      max-height: 35px;
+//      border-radius: 50%;
+//      opacity: .5;
+// }
+// .logo {
+//      max-width: 150px;
+//      max-height: 150px;
+     // position: fixed;
+     // top: 15%;
+     // left: 31%;
+     // opacity: .65;
+// }
+// .logo-name {
+//      font-family: 'Saira Extra Condensed', sans-serif;
+//      font-size: 3.5em;
+//      // color: #414047;
+//      // color: #B6B2D0;
+//      // color: #443c32;
+//      color: #c7c5c4;
+//      letter-spacing: 2.2px;
+//      position: fixed;
+//      top: 32%;
+//      left: 50%;
+//      transform: translate(-50%, -50%);
+//      // text-shadow: 1px 0px 1px #ccc;
+//      text-shadow: 1px 1px 1px black;
+// }
+// .login-sec {
+//      position: fixed;
+//      top: 62%;
+//      left: 48%;
+//      transform: translate(-50%, -50%);
+// }
+// .email {
+//      display: flex;
+//      flex: inline;
+// }
+// .pw {
+//      display: flex;
+//      flex: inline;
+// }
+// .email input {
+//      background-color: #414047;
+//      height: 21px;
+//      margin-top: 6px;
+//      padding-left: 3px;
+//      margin-left: 5px;
+//      border-left: solid 2px transparent;
+//      border-right: solid 2px transparent;
+//      border-bottom: solid 2px #fff;
+//      filter: drop-shadow(10px 20px 30px #333);
+// }
+// .pw input {
+//      background-color: #414047;
+//      height: 21px;
+//      margin-top: 6px;
+//      padding-left: 3px;
+//      margin-left: 5px;
+//      border-left: solid 2px transparent;
+//      border-right: solid 2px transparent;
+//      border-bottom: solid 2px #fff;
+//      filter: drop-shadow(10px 20px 30px #333);
+// }
+// .btn {
+//      position: fixed;
+//      left: 28%;
+//      top: 73%;
+// }
+// .login-btn {
+//      padding: 7px 64px;
+//      background-position: center;
+//      background: rgba(199, 197, 196, 0.1);
+//      // background-color: grey;
+//      // opacity: .5;
+//      // border-left: solid 3px transparent;
+//      // border-right: solid 3px transparent;
+//      // border-bottom: solid 3px #fff;
+//      // box-shadow: 0px 0px 30px #333;
+// }
+// .login-btn input {
+//      font-family: monospace;
+//      color: white;
+// }
+// @media screen
+//   and (min-device-width: 1200px)
+//   and (max-device-width: 1600px)
+//   and (-webkit-min-device-pixel-ratio: 1) {
+// }
+//###########################BOOOOOOOOOOOOOTSTRAP######################
+.amazario-navbar{
+     padding: 30px 0px;
+     background: white;
 }
-img {
-     padding: 2px;
-     max-width: 35px;
-     max-height: 35px;
-     border-radius: 50%;
-     opacity: .5;
-}
-.logo {
-     max-width: 150px;
-     max-height: 150px;
-     position: fixed;
-     top: 15%;
-     left: 31%;
-     opacity: .65;
-}
-.logo-name {
-     font-family: 'Saira Extra Condensed', sans-serif;
-     font-size: 3.5em;
-     // color: #414047;
-     // color: #B6B2D0;
-     // color: #443c32;
-     color: #c7c5c4;
-     letter-spacing: 2.2px;
-     position: fixed;
-     top: 32%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     // text-shadow: 1px 0px 1px #ccc;
-     text-shadow: 1px 1px 1px black;
-}
-.login-sec {
-     position: fixed;
-     top: 62%;
-     left: 48%;
-     transform: translate(-50%, -50%);
-}
-.email {
-     display: flex;
-     flex: inline;
-}
-.pw {
-     display: flex;
-     flex: inline;
-}
-.email input {
-     background-color: #414047;
-     height: 21px;
-     margin-top: 6px;
-     padding-left: 3px;
-     margin-left: 5px;
-     border-left: solid 2px transparent;
-     border-right: solid 2px transparent;
-     border-bottom: solid 2px #fff;
-     filter: drop-shadow(10px 20px 30px #333);
-}
-.pw input {
-     background-color: #414047;
-     height: 21px;
-     margin-top: 6px;
-     padding-left: 3px;
-     margin-left: 5px;
-     border-left: solid 2px transparent;
-     border-right: solid 2px transparent;
-     border-bottom: solid 2px #fff;
-     filter: drop-shadow(10px 20px 30px #333);
-}
-.btn {
-     position: fixed;
-     left: 28%;
-     top: 73%;
-}
-.login-btn {
-     padding: 7px 64px;
-     background-position: center;
-     background: rgba(199, 197, 196, 0.1);
-     // background-color: grey;
-     // opacity: .5;
-     // border-left: solid 3px transparent;
-     // border-right: solid 3px transparent;
-     // border-bottom: solid 3px #fff;
-     // box-shadow: 0px 0px 30px #333;
-}
-.login-btn input {
-     font-family: monospace;
-     color: white;
-}
-
-@media screen
-  and (min-device-width: 1200px)
-  and (max-device-width: 1600px)
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-}
+     .amazario-navbar .amazario-cart{
+          padding-left: 10px;
+          border-left: 1px solid #969696;
+     }
+     .amazario-navbar .amzario-btn-car{
+          background: #3498db;
+          color: white;
+          border-radius: 3px;
+     }
+     .amazario-navbar .amazario-form-btn{
+          margin-right: 6px;
+     }
+     li.active.sign-in-btn a {
+     //     background: #353244 !important;
+         color: white;
+     }
+     .navbar-amazario {
+          width: 30px;
+          height: 30px;
+     }
