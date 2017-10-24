@@ -1,5 +1,10 @@
 <p id="notice"><%= notice %></p>
 
+<p id="image">
+  <img src="<%= @product.image_url %>"/>
+  <%= @product.image_url %>
+</p>
+
 <p id="name">
   <strong>Name:</strong>
   <%= @product.name %>

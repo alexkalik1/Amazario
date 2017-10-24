@@ -16,6 +16,11 @@
     <%= form.text_field :name, id: :product_name %>
   </div>
 
+  <div class="prd-image">
+    <%= form.label :image_url %>
+    <%= form.text_field :image, id: :product_image %>
+  </div>
+
   <div class="prd-price">
        <%= form.label :price_in_cents %>
        <%= form.number_field :price_in_cents, id: :product_price_in_cents %>
