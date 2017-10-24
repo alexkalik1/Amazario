@@ -31,18 +31,18 @@ body {
   margin: 0;
 }
 
-div.link {
+/**/
+/*div.link {
   text-align: center;
-}
-
+}*/
 div#back_edit a {
   color: white;
   width: 100px;
   height: 25px;
   display: inline-block;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   margin-top: 25px;
-}*/
+}
 .new-prd {
      position: fixed;
      display: block;
