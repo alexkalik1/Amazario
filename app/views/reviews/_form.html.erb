@@ -11,9 +11,9 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :comment %><br>
-    <%= form.text_area :comment %>
+    <%= form.text_area :comment, class: "form-control" %>
   </div>
 
   <% if @product.nil? %>
@@ -26,7 +26,11 @@
     <%= form.hidden_field :product_id, value: @product.id %>
   <% end %>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+<div class="container-fluid">
+     <div class="col-sm-4">
+       <div class="actions btn-success">
+         <%= form.submit %>
+       </div>
+     </div>
+</div>
 <% end %>

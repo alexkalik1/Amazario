@@ -17,7 +17,7 @@
  *= require tether
  */
  @import "bootstrap-sprockets";
- @import "bootstrap"
+ @import "bootstrap";
 // /*html {
 //   margin: 0;
 //   width: 125%;
@@ -83,3 +83,7 @@
 //      width: 100%;
 //      text-align: center;
 // }
+.footer-copyright{
+     margin: 25px 0px;
+     padding: 5px 0px;
+}

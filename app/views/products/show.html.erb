@@ -3,7 +3,15 @@
 <p id="image">
   <img src="<%= @product.image_url %>" class="product_img"/>
 </p>
+<div class="container-fluid text-center">
+<img src="http://scene7.zumiez.com/is/image/zumiez/pdp_hero/Zine-2nd-Inning-Heather-Grey-%26-Marled-Red-Baseball-Shirt-_225749-front.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+</div>
 
+
+
+<div class="container text-center"
+
+<div class="conatainer"
 <p id="name">
   <strong>Name:</strong>
   <%= @product.name %>
@@ -22,9 +30,11 @@
 <p id="cart">
 <%= form_for @order_item do |f| %>
   <%= f.hidden_field :product_id, value: @product.id %>
-  <%= f.submit "Add to Cart" %>
+  <%= f.submit "Add to Cart", class: "btn-danger" %>
 <% end %>
 </p>
+</div>
+<div class="container text-center">
 
 <h2>Reviews</h2>
 <% @product.reviews.each do |review| %>
@@ -33,11 +43,18 @@
     <br>
     Added on: <%= review.created_at %>
   </p>
+  <hr>
 <% end %>
 
-  <h2>New Review</h2>
-<%= render 'reviews/form' %>
-<div id="back_edit">
+</div>
+</div>
+
+<div class="container text-center">
+     <h2>New Review</h2>
+     <!-- <span class="label label-default">Default</span> -->
+     <%= render 'reviews/form' %>
+</div>
+<!-- <div id="back_edit">
   <%= link_to 'Edit', edit_product_path(@product) %> |
   <%= link_to 'Back', products_path %>
-</div>
+</div> -->

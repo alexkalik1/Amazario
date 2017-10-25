@@ -1,106 +1,15 @@
 // Place all the styles related to the sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-// body {
-//      background-color: #353244;
-//      color: white;
-//
-// }
-// img {
-//      padding: 2px;
-//      max-width: 35px;
-//      max-height: 35px;
-//      border-radius: 50%;
-//      opacity: .5;
-// }
-// .logo {
-//      max-width: 150px;
-//      max-height: 150px;
-     // position: fixed;
-     // top: 15%;
-     // left: 31%;
-     // opacity: .65;
-// }
-// .logo-name {
-//      font-family: 'Saira Extra Condensed', sans-serif;
-//      font-size: 3.5em;
-//      // color: #414047;
-//      // color: #B6B2D0;
-//      // color: #443c32;
-//      color: #c7c5c4;
-//      letter-spacing: 2.2px;
-//      position: fixed;
-//      top: 32%;
-//      left: 50%;
-//      transform: translate(-50%, -50%);
-//      // text-shadow: 1px 0px 1px #ccc;
-//      text-shadow: 1px 1px 1px black;
-// }
-// .login-sec {
-//      position: fixed;
-//      top: 62%;
-//      left: 48%;
-//      transform: translate(-50%, -50%);
-// }
-// .email {
-//      display: flex;
-//      flex: inline;
-// }
-// .pw {
-//      display: flex;
-//      flex: inline;
-// }
-// .email input {
-//      background-color: #414047;
-//      height: 21px;
-//      margin-top: 6px;
-//      padding-left: 3px;
-//      margin-left: 5px;
-//      border-left: solid 2px transparent;
-//      border-right: solid 2px transparent;
-//      border-bottom: solid 2px #fff;
-//      filter: drop-shadow(10px 20px 30px #333);
-// }
-// .pw input {
-//      background-color: #414047;
-//      height: 21px;
-//      margin-top: 6px;
-//      padding-left: 3px;
-//      margin-left: 5px;
-//      border-left: solid 2px transparent;
-//      border-right: solid 2px transparent;
-//      border-bottom: solid 2px #fff;
-//      filter: drop-shadow(10px 20px 30px #333);
-// }
-// .btn {
-//      position: fixed;
-//      left: 28%;
-//      top: 73%;
-// }
-// .login-btn {
-//      padding: 7px 64px;
-//      background-position: center;
-//      background: rgba(199, 197, 196, 0.1);
-//      // background-color: grey;
-//      // opacity: .5;
-//      // border-left: solid 3px transparent;
-//      // border-right: solid 3px transparent;
-//      // border-bottom: solid 3px #fff;
-//      // box-shadow: 0px 0px 30px #333;
-// }
-// .login-btn input {
-//      font-family: monospace;
-//      color: white;
-// }
-// @media screen
-//   and (min-device-width: 1200px)
-//   and (max-device-width: 1600px)
-//   and (-webkit-min-device-pixel-ratio: 1) {
-// }
+
 //###########################BOOOOOOOOOOOOOTSTRAP######################
+body{
+     background-color: #C3C4C6 !important;
+}
+
 .amazario-navbar{
-     padding: 30px 0px;
-     background: white;
+     padding: 7px 0px;
+     background: #353244 !important;
 }
      .amazario-navbar .amazario-cart{
           padding-left: 10px;
@@ -122,3 +31,94 @@
           width: 30px;
           height: 30px;
      }
+
+
+.collapse.in{
+     .form-control{
+          width: 40%;
+     }
+}
+     .logo-name {
+          margin-top: 10px;
+          margin-bottom: 0px;
+          padding: 20px 10px 0px 10px;
+          font-family: 'Saira Extra Condensed', sans-serif;
+          font-size: 3.5em;
+          color: #c7c5c4;
+          letter-spacing: 2px;
+          text-shadow: 1px 0px 1px #ccc;
+          text-shadow: 1px 1px 1px black;
+}
+
+     .btn{
+        outline:0;
+        border:none;
+        border-top:none;
+        border-bottom:none;
+        border-left:none;
+        border-right:none;
+        box-shadow:inset 2px -3px rgba(0,0,0,0.15);
+       }
+       .btn:focus{
+        outline:0;
+        -webkit-outline:0;
+        -moz-outline:0;
+       }
+       .fullscreen_bg {
+         position: fixed;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         background-size: cover;
+         background-position: 50% 50%;
+         background-image: url('http://cleancanvas.herokuapp.com/img/backgrounds/color-splash.jpg');
+         background-repeat:repeat;
+       }
+       .form-signin {
+          max-width: 280px;
+          padding: 15px;
+          margin: 0 auto;
+          margin-top: 0px;
+       }
+       .form-signin .form-signin-heading, .form-signin {
+         margin-bottom: 10px;
+       }
+       .form-signin .form-control {
+         position: relative;
+         font-size: 16px;
+         height: auto;
+         padding: 10px;
+         -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         box-sizing: border-box;
+       }
+       .form-signin .form-control:focus {
+         z-index: 2;
+       }
+       .form-signin input[type="text"] {
+         margin-bottom: -1px;
+         border-bottom-left-radius: 0;
+         border-bottom-right-radius: 0;
+         border-top-style: solid;
+         border-right-style: solid;
+         border-bottom-style: none;
+         border-left-style: solid;
+         border-color: #000;
+       }
+       .form-signin input[type="password"] {
+         margin-bottom: 10px;
+         border-top-left-radius: 0;
+         border-top-right-radius: 0;
+         border-top-style: none;
+         border-right-style: solid;
+         border-bottom-style: solid;
+         border-left-style: solid;
+         border-color: rgb(0,0,0);
+         border-top:1px solid rgba(0,0,0,0.08);
+       }
+       .form-signin-heading {
+         color: #fff;
+         text-align: center;
+         text-shadow: 0 2px 2px rgba(0,0,0,0.5);
+       }

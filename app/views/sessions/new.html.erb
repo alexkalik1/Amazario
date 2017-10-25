@@ -1,16 +1,25 @@
 
-<div id="spot">
-<!-- <img class="logo"src="https://major.io/wp-content/uploads/2014/08/image-ansible.png" alt="Amazario"> -->
-<h6 class= "logo-name">AMAZARIO</h6>
+<div ="row">
+     <div class="col-sm-12 text-center"><img src="https://major.io/wp-content/uploads/2014/08/image-ansible.png" width="200" height="200"alt="Amazario"></div>
 </div>
 
-<div class="login-sec">
-     <%= form_tag '/login' do %>
-     <h4 class= "email"><%= text_field_tag :email %></h4>
-     <h3 class= "pw"><%= password_field_tag :password %></h3>
+<h6 class= "logo-name text-center">AMAZARIO</h6>
+
+<div class="container form-signin">
+<!-- <form class="form-signin"> -->
+          <h1 class="form-signin-heading text-muted">Sign In</h1>
+          <%= form_tag '/login' do %>
+          <%= text_field_tag :email, '', placeholder: 'Email', class: 'form-control' %>
+		<!-- <input type="text" class="form-control" placeholder="Email address" required="" autofocus=""> -->
+          <%= password_field_tag :password, '',placeholder: 'Password', class: 'form-control' %>
+     	<!-- <input type="password" class="form-control" placeholder="Password" required=""> -->
+          <%= submit_tag "Login", class: 'form-control' %>
+          <% end %>
+<!-- </form> -->
 </div>
 
-<div class="btn">
-<button class="login-btn"><%= submit_tag "Login" %></button>
-<% end %>
+<!--Call to action-->
+<div class="call-to-action text-center">
+     <%= link_to 'Sign up!', '/signup', class: 'btn btn-danger btn-rounded' %>
 </div>
+<!--/.Call to action-->
