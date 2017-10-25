@@ -122,3 +122,6 @@ body{
          text-align: center;
          text-shadow: 0 2px 2px rgba(0,0,0,0.5);
        }
+          article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary{
+               z-index: 1;
+          }

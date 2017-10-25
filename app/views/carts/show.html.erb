@@ -1,4 +1,4 @@
-<h1>Shopping Cart</h1>
+<!-- <h1>Shopping Cart</h1>
 
 <% if @order_items.any? %>
   <% @order_items.each do |item| %>
@@ -10,4 +10,81 @@
   <p>Your shopping cart is empty.</p>
 <% end %>
 
-<button id="checkout">Checkout and Pay</button>
+<button id="checkout">Checkout and Pay</button> -->
+
+
+<h1>Shopping Cart</h1>
+
+<div class="shopping-cart">
+
+       <div class="column-labels">
+         <label class="product-image">Image</label>
+         <label class="product-details">Product</label>
+         <label class="product-price">Price</label>
+         <label class="product-quantity">Quantity</label>
+         <label class="product-removal">Remove</label>
+         <label class="product-line-price">Total</label>
+       </div>
+
+       <div class="product">
+         <div class="product-image">
+           <img src="https://lh3.googleusercontent.com/SZ4qLIqiInwNLoYA_sJ3oKgkOcaH14vNoMMsBA11AxVE9z3fEH6iZKbJH6ZRJAiZgchJ0w=s148">
+         </div>
+         <div class="product-details">
+           <div class="product-title">Grey Sectional Couch</div>
+           <p class="product-description">Grey modern sleek sectional couch. Perfect for single homes and to watch the game.</p>
+         </div>
+         <div class="product-price">124.98</div>
+         <div class="product-quantity">
+           <input type="number" value="1" min="1">
+         </div>
+         <div class="product-removal">
+           <button class="remove-product">
+             Remove
+           </button>
+         </div>
+         <div class="product-line-price">124.98</div>
+       </div>
+
+       <div class="product">
+         <div class="product-image">
+           <img src="https://johncootesfurniture.com.au/wp-content/uploads/2017/07/HALLETT_TV_Unit_Lifestyle_02.png">
+         </div>
+         <div class="product-details">
+           <div class="product-title">TV Stand</div>
+           <p class="product-description">Perfect for the living room. Set up your gaming system and enjoy.</p>
+         </div>
+         <div class="product-price">80.99</div>
+         <div class="product-quantity">
+           <input type="number" value="1" min="1">
+         </div>
+         <div class="product-removal">
+           <button class="remove-product">
+             Remove
+           </button>
+         </div>
+         <div class="product-line-price">80.99</div>
+       </div>
+
+       <div class="totals">
+         <div class="totals-item">
+           <label>Subtotal</label>
+           <div class="totals-value" id="cart-subtotal">71.97</div>
+         </div>
+         <div class="totals-item">
+           <label>Tax (5%)</label>
+           <div class="totals-value" id="cart-tax">10.30</div>
+         </div>
+         <div class="totals-item">
+           <label>Shipping</label>
+           <div class="totals-value" id="cart-shipping">Free</div>
+         </div>
+         <div class="totals-item totals-item-total">
+           <label>Grand Total</label>
+           <div class="totals-value" id="cart-total">216.27</div>
+         </div>
+       </div>
+
+      <button class="checkout">Checkout</button>
+
+</div>
