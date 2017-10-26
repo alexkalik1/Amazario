@@ -60,7 +60,7 @@
          </div>
          <div class="product-removal">
            <button class="remove-product">
-             Remove
+             <%= item.product.name %> | <%= link_to "Remove", order_items_path(item), :data => {:confirm => "You sure?", :method => "delete"} %>Remove
            </button>
          </div>
          <div class="product-line-price">80.99</div>
@@ -85,6 +85,6 @@
          </div>
        </div>
 
-      <button class="checkout">Checkout</button>
+      <button id="checkout" class="checkout">Checkout</button>
 
 </div>

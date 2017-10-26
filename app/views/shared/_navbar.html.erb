@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%=link_to "Amazario", login_path(@user), class: "navbar-brand"%>
+      <%=link_to "Amazario", products_path, class: "navbar-brand"%>
       <!-- <a class="navbar-brand" href="sessions#new">Amazario</a> -->
     </div>
 
@@ -35,10 +35,12 @@
        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
        <ul class="dropdown-menu">
          <li><a href="/products">Home</a></li>
-         <li><a href="#">Another action</a></li>
-         <li><a href="#">Something else here</a></li>
-         <li role="separator" class="divider"></li>
-         <li><a href="#">Separated link</a></li>
+         <% if current_user %>
+    <li><%= current_user.name%> <%=link_to "Logout", logout_path, class: "glyphicon glyphicon-user"%></li>
+         <% else %>
+           <li><%= link_to 'Login', '/login' %></li> <li> <%= link_to 'Signup', '/signup' %></li>
+         <% end %></li>
+         <!-- <li role="separator" class="divider"></li><%=link_to "Logout", logout_path, class: "glyphicon glyphicon-user"%></a></li> -->
          <li role="separator" class="divider"></li>
          <li><a href="cart" class="amazario-btn-car btn"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
        </ul>

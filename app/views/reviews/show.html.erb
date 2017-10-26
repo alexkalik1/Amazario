@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<div class container-fluid text-center>
 <p id="comment">
   <strong>Comment:</strong>
   <%= @review.comment %>
@@ -9,7 +9,7 @@
   <strong>Product:</strong>
   <%= @review.product.name %>
 </p>
-
+</div>
 <%= link_to 'Edit', edit_review_path(@review) %> |
 
 <% if @review.product.nil? %>
@@ -18,3 +18,4 @@
 <% else %>
   <%= link_to 'Back', @review.product %>
 <% end %>
+</div>

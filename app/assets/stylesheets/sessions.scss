@@ -9,7 +9,7 @@ body{
 
 .amazario-navbar{
      padding: 7px 0px;
-     background: #353244 !important;
+     // background: #353244 !important;
 }
      .amazario-navbar .amazario-cart{
           padding-left: 10px;
@@ -44,7 +44,7 @@ body{
           padding: 20px 10px 0px 10px;
           font-family: 'Saira Extra Condensed', sans-serif;
           font-size: 3.5em;
-          color: #c7c5c4;
+          color: #75716;
           letter-spacing: 2px;
           text-shadow: 1px 0px 1px #ccc;
           text-shadow: 1px 1px 1px black;
@@ -125,3 +125,7 @@ body{
           article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary{
                z-index: 1;
           }
+
+          ul.dropdown-menu {
+    text-align: center !important;
+}
